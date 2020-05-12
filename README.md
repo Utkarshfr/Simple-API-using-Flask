@@ -21,7 +21,7 @@ alter_email char(50),
 CONSTRAINT `fk_id` FOREIGN KEY (id) REFERENCES user(id)
 );
 
-
+# How to test the API
 To create a user throw in a POST request at
 http://127.0.0.1/add
 with values in body using tags username, first_name, last_name, password, email

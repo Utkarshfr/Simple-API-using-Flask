@@ -1,3 +1,6 @@
+# Change the username and password while establishing a connection to the database if you have any
+# make changes in every db.connect connection query
+
 import flask
 from flask import jsonify,request
 import pymysql as db
@@ -5,6 +8,7 @@ import pymysql as db
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+# sample data to test api without the use of database
 data = [
     {'id': 0},
     {'title': 'A Fire Upon the Deep'},
